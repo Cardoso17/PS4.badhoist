@@ -21,7 +21,7 @@ function dumpModule(address, size, name) {
       ([filename].bin, [filedata]) and using this, we no 
       longer need to manually change the filename inside the 
       server.js file. */
-      webSock.send(`${name}.bin,${buffer});
+      webSock.send(`${name}.bin,${buffer}`);
       bytesLeft -= chunkSize;
       bytesRead += chunkSize;
       buffer = null;

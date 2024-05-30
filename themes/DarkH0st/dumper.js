@@ -1,4 +1,4 @@
-const hostIP = "";
+const hostIP = "192.168.1.252";
 const hostPort = "5000";
 
 const secMaster = new WebSocket(`ws://${hostIP}:${hostPort}`);

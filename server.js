@@ -2,6 +2,8 @@ var sheesh = require("ws");
 var fs = require("fs");
 var server = new sheesh.Server({ port: 5000 });
 
+console.log("TEST");
+
 server.on("connection", (socket) => {
   console.log("Client connected");
   socket.on("message", (message) => {
